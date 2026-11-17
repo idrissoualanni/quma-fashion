@@ -1,0 +1,21 @@
+{
+  "name": "Quma Fashion",
+  "short_name": "Quma Fashion",
+  "description": "La mode et la beauté à votre portée.",
+  "start_url": "/quma-fashion/",
+  "display": "standalone",
+  "background_color": "#F8F3EA",
+  "theme_color": "#401522",
+  "icons": [
+    {
+      "src": "/quma-fashion/icons/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/quma-fashion/icons/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

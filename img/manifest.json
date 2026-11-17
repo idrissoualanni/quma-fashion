@@ -1,0 +1,898 @@
+[
+  {
+    "key": "hero",
+    "alt": "Femme élégante en tenue traditionnelle africaine colorée devant un escalier orné d'œuvres d'art",
+    "family": "ceremonie",
+    "usage": "hero",
+    "ratio": 0.75,
+    "width": 1600,
+    "height": 2133,
+    "variants": [
+      {
+        "w": 800,
+        "h": 1067,
+        "avif": "/img/hero-800.avif",
+        "webp": "/img/hero-800.webp",
+        "jpg": "/img/hero-800.jpg"
+      },
+      {
+        "w": 1200,
+        "h": 1600,
+        "avif": "/img/hero-1200.avif",
+        "webp": "/img/hero-1200.webp",
+        "jpg": "/img/hero-1200.jpg"
+      },
+      {
+        "w": 1600,
+        "h": 2133,
+        "avif": "/img/hero-1600.avif",
+        "webp": "/img/hero-1600.webp",
+        "jpg": "/img/hero-1600.jpg"
+      }
+    ]
+  },
+  {
+    "key": "caftan-mariee",
+    "alt": "Caftan de mariée brodé porté devant une architecture classique",
+    "family": "ceremonie",
+    "usage": "category",
+    "ratio": 0.8,
+    "width": 1100,
+    "height": 1375,
+    "variants": [
+      {
+        "w": 480,
+        "h": 600,
+        "avif": "/img/caftan-mariee-480.avif",
+        "webp": "/img/caftan-mariee-480.webp",
+        "jpg": "/img/caftan-mariee-480.jpg"
+      },
+      {
+        "w": 800,
+        "h": 1000,
+        "avif": "/img/caftan-mariee-800.avif",
+        "webp": "/img/caftan-mariee-800.webp",
+        "jpg": "/img/caftan-mariee-800.jpg"
+      },
+      {
+        "w": 1100,
+        "h": 1375,
+        "avif": "/img/caftan-mariee-1100.avif",
+        "webp": "/img/caftan-mariee-1100.webp",
+        "jpg": "/img/caftan-mariee-1100.jpg"
+      }
+    ]
+  },
+  {
+    "key": "abaya-femme",
+    "alt": "Portrait d'une femme en abaya sombre et hijab, allure élégante",
+    "family": "abayas",
+    "usage": "category",
+    "ratio": 0.8,
+    "width": 1100,
+    "height": 1375,
+    "variants": [
+      {
+        "w": 480,
+        "h": 600,
+        "avif": "/img/abaya-femme-480.avif",
+        "webp": "/img/abaya-femme-480.webp",
+        "jpg": "/img/abaya-femme-480.jpg"
+      },
+      {
+        "w": 800,
+        "h": 1000,
+        "avif": "/img/abaya-femme-800.avif",
+        "webp": "/img/abaya-femme-800.webp",
+        "jpg": "/img/abaya-femme-800.jpg"
+      },
+      {
+        "w": 1100,
+        "h": 1375,
+        "avif": "/img/abaya-femme-1100.avif",
+        "webp": "/img/abaya-femme-1100.webp",
+        "jpg": "/img/abaya-femme-1100.jpg"
+      }
+    ]
+  },
+  {
+    "key": "abaya-homme",
+    "alt": "Homme en thobe blanc traditionnel, portrait élégant",
+    "family": "abayas",
+    "usage": "category",
+    "ratio": 0.8,
+    "width": 1100,
+    "height": 1375,
+    "variants": [
+      {
+        "w": 480,
+        "h": 600,
+        "avif": "/img/abaya-homme-480.avif",
+        "webp": "/img/abaya-homme-480.webp",
+        "jpg": "/img/abaya-homme-480.jpg"
+      },
+      {
+        "w": 800,
+        "h": 1000,
+        "avif": "/img/abaya-homme-800.avif",
+        "webp": "/img/abaya-homme-800.webp",
+        "jpg": "/img/abaya-homme-800.jpg"
+      },
+      {
+        "w": 1100,
+        "h": 1375,
+        "avif": "/img/abaya-homme-1100.avif",
+        "webp": "/img/abaya-homme-1100.webp",
+        "jpg": "/img/abaya-homme-1100.jpg"
+      }
+    ]
+  },
+  {
+    "key": "abaya-enfant",
+    "alt": "Enfants en tenue traditionnelle devant la mosquée Jama Masjid",
+    "family": "abayas",
+    "usage": "category",
+    "ratio": 0.8,
+    "width": 1100,
+    "height": 1375,
+    "variants": [
+      {
+        "w": 480,
+        "h": 600,
+        "avif": "/img/abaya-enfant-480.avif",
+        "webp": "/img/abaya-enfant-480.webp",
+        "jpg": "/img/abaya-enfant-480.jpg"
+      },
+      {
+        "w": 800,
+        "h": 1000,
+        "avif": "/img/abaya-enfant-800.avif",
+        "webp": "/img/abaya-enfant-800.webp",
+        "jpg": "/img/abaya-enfant-800.jpg"
+      },
+      {
+        "w": 1100,
+        "h": 1375,
+        "avif": "/img/abaya-enfant-1100.avif",
+        "webp": "/img/abaya-enfant-1100.webp",
+        "jpg": "/img/abaya-enfant-1100.jpg"
+      }
+    ]
+  },
+  {
+    "key": "chaussures",
+    "alt": "Escarpins noirs à détail chaîne, photographie de mode",
+    "family": "accessoires",
+    "usage": "category",
+    "ratio": 0.8,
+    "width": 1100,
+    "height": 1375,
+    "variants": [
+      {
+        "w": 480,
+        "h": 600,
+        "avif": "/img/chaussures-480.avif",
+        "webp": "/img/chaussures-480.webp",
+        "jpg": "/img/chaussures-480.jpg"
+      },
+      {
+        "w": 800,
+        "h": 1000,
+        "avif": "/img/chaussures-800.avif",
+        "webp": "/img/chaussures-800.webp",
+        "jpg": "/img/chaussures-800.jpg"
+      },
+      {
+        "w": 1100,
+        "h": 1375,
+        "avif": "/img/chaussures-1100.avif",
+        "webp": "/img/chaussures-1100.webp",
+        "jpg": "/img/chaussures-1100.jpg"
+      }
+    ]
+  },
+  {
+    "key": "sacs",
+    "alt": "Sac à main en cuir brun avec anses beiges",
+    "family": "accessoires",
+    "usage": "category",
+    "ratio": 0.8,
+    "width": 1100,
+    "height": 1375,
+    "variants": [
+      {
+        "w": 480,
+        "h": 600,
+        "avif": "/img/sacs-480.avif",
+        "webp": "/img/sacs-480.webp",
+        "jpg": "/img/sacs-480.jpg"
+      },
+      {
+        "w": 800,
+        "h": 1000,
+        "avif": "/img/sacs-800.avif",
+        "webp": "/img/sacs-800.webp",
+        "jpg": "/img/sacs-800.jpg"
+      },
+      {
+        "w": 1100,
+        "h": 1375,
+        "avif": "/img/sacs-1100.avif",
+        "webp": "/img/sacs-1100.webp",
+        "jpg": "/img/sacs-1100.jpg"
+      }
+    ]
+  },
+  {
+    "key": "bijoux",
+    "alt": "Présentoir de bijoux dorés, colliers et bracelets",
+    "family": "accessoires",
+    "usage": "category",
+    "ratio": 0.8,
+    "width": 1100,
+    "height": 1375,
+    "variants": [
+      {
+        "w": 480,
+        "h": 600,
+        "avif": "/img/bijoux-480.avif",
+        "webp": "/img/bijoux-480.webp",
+        "jpg": "/img/bijoux-480.jpg"
+      },
+      {
+        "w": 800,
+        "h": 1000,
+        "avif": "/img/bijoux-800.avif",
+        "webp": "/img/bijoux-800.webp",
+        "jpg": "/img/bijoux-800.jpg"
+      },
+      {
+        "w": 1100,
+        "h": 1375,
+        "avif": "/img/bijoux-1100.avif",
+        "webp": "/img/bijoux-1100.webp",
+        "jpg": "/img/bijoux-1100.jpg"
+      }
+    ]
+  },
+  {
+    "key": "parfums",
+    "alt": "Flacons de parfum élégants sur une surface en marbre",
+    "family": "beaute",
+    "usage": "category",
+    "ratio": 0.8,
+    "width": 1100,
+    "height": 1375,
+    "variants": [
+      {
+        "w": 480,
+        "h": 600,
+        "avif": "/img/parfums-480.avif",
+        "webp": "/img/parfums-480.webp",
+        "jpg": "/img/parfums-480.jpg"
+      },
+      {
+        "w": 800,
+        "h": 1000,
+        "avif": "/img/parfums-800.avif",
+        "webp": "/img/parfums-800.webp",
+        "jpg": "/img/parfums-800.jpg"
+      },
+      {
+        "w": 1100,
+        "h": 1375,
+        "avif": "/img/parfums-1100.avif",
+        "webp": "/img/parfums-1100.webp",
+        "jpg": "/img/parfums-1100.jpg"
+      }
+    ]
+  },
+  {
+    "key": "huiles",
+    "alt": "Flacon compte-gouttes en verre ambré sur pierre, lumière chaude",
+    "family": "beaute",
+    "usage": "category",
+    "ratio": 0.8,
+    "width": 1100,
+    "height": 1375,
+    "variants": [
+      {
+        "w": 480,
+        "h": 600,
+        "avif": "/img/huiles-480.avif",
+        "webp": "/img/huiles-480.webp",
+        "jpg": "/img/huiles-480.jpg"
+      },
+      {
+        "w": 800,
+        "h": 1000,
+        "avif": "/img/huiles-800.avif",
+        "webp": "/img/huiles-800.webp",
+        "jpg": "/img/huiles-800.jpg"
+      },
+      {
+        "w": 1100,
+        "h": 1375,
+        "avif": "/img/huiles-1100.avif",
+        "webp": "/img/huiles-1100.webp",
+        "jpg": "/img/huiles-1100.jpg"
+      }
+    ]
+  },
+  {
+    "key": "soins",
+    "alt": "Pot de crème de soin luxueux entouré de packaging doré",
+    "family": "beaute",
+    "usage": "category",
+    "ratio": 0.8,
+    "width": 1100,
+    "height": 1375,
+    "variants": [
+      {
+        "w": 480,
+        "h": 600,
+        "avif": "/img/soins-480.avif",
+        "webp": "/img/soins-480.webp",
+        "jpg": "/img/soins-480.jpg"
+      },
+      {
+        "w": 800,
+        "h": 1000,
+        "avif": "/img/soins-800.avif",
+        "webp": "/img/soins-800.webp",
+        "jpg": "/img/soins-800.jpg"
+      },
+      {
+        "w": 1100,
+        "h": 1375,
+        "avif": "/img/soins-1100.avif",
+        "webp": "/img/soins-1100.webp",
+        "jpg": "/img/soins-1100.jpg"
+      }
+    ]
+  },
+  {
+    "key": "tissus",
+    "alt": "Tissus africains colorés aux motifs variés",
+    "family": "tissus",
+    "usage": "category",
+    "ratio": 0.8,
+    "width": 1100,
+    "height": 1200,
+    "variants": [
+      {
+        "w": 480,
+        "h": 600,
+        "avif": "/img/tissus-480.avif",
+        "webp": "/img/tissus-480.webp",
+        "jpg": "/img/tissus-480.jpg"
+      },
+      {
+        "w": 800,
+        "h": 1000,
+        "avif": "/img/tissus-800.avif",
+        "webp": "/img/tissus-800.webp",
+        "jpg": "/img/tissus-800.jpg"
+      },
+      {
+        "w": 1100,
+        "h": 1200,
+        "avif": "/img/tissus-1100.avif",
+        "webp": "/img/tissus-1100.webp",
+        "jpg": "/img/tissus-1100.jpg"
+      }
+    ]
+  },
+  {
+    "key": "boutique-1",
+    "alt": "Intérieur d'une boutique de mode élégante avec vêtements et chaussures",
+    "family": "boutique",
+    "usage": "wide",
+    "ratio": 1.6,
+    "width": 1800,
+    "height": 1125,
+    "variants": [
+      {
+        "w": 900,
+        "h": 563,
+        "avif": "/img/boutique-1-900.avif",
+        "webp": "/img/boutique-1-900.webp",
+        "jpg": "/img/boutique-1-900.jpg"
+      },
+      {
+        "w": 1400,
+        "h": 875,
+        "avif": "/img/boutique-1-1400.avif",
+        "webp": "/img/boutique-1-1400.webp",
+        "jpg": "/img/boutique-1-1400.jpg"
+      },
+      {
+        "w": 1800,
+        "h": 1125,
+        "avif": "/img/boutique-1-1800.avif",
+        "webp": "/img/boutique-1-1800.webp",
+        "jpg": "/img/boutique-1-1800.jpg"
+      }
+    ]
+  },
+  {
+    "key": "boutique-2",
+    "alt": "Intérieur d'une boutique de mode contemporaine, présentoirs et décor soigné",
+    "family": "boutique",
+    "usage": "tall",
+    "ratio": 0.8,
+    "width": 1200,
+    "height": 1500,
+    "variants": [
+      {
+        "w": 600,
+        "h": 750,
+        "avif": "/img/boutique-2-600.avif",
+        "webp": "/img/boutique-2-600.webp",
+        "jpg": "/img/boutique-2-600.jpg"
+      },
+      {
+        "w": 900,
+        "h": 1125,
+        "avif": "/img/boutique-2-900.avif",
+        "webp": "/img/boutique-2-900.webp",
+        "jpg": "/img/boutique-2-900.jpg"
+      },
+      {
+        "w": 1200,
+        "h": 1500,
+        "avif": "/img/boutique-2-1200.avif",
+        "webp": "/img/boutique-2-1200.webp",
+        "jpg": "/img/boutique-2-1200.jpg"
+      }
+    ]
+  },
+  {
+    "key": "gallery-01",
+    "alt": "Femme en robe noire élégante devant une cathédrale",
+    "family": "ceremonie",
+    "usage": "gallery",
+    "ratio": null,
+    "width": 1300,
+    "height": 1950,
+    "variants": [
+      {
+        "w": 500,
+        "h": 750,
+        "avif": "/img/gallery-01-500.avif",
+        "webp": "/img/gallery-01-500.webp",
+        "jpg": "/img/gallery-01-500.jpg"
+      },
+      {
+        "w": 900,
+        "h": 1350,
+        "avif": "/img/gallery-01-900.avif",
+        "webp": "/img/gallery-01-900.webp",
+        "jpg": "/img/gallery-01-900.jpg"
+      },
+      {
+        "w": 1300,
+        "h": 1950,
+        "avif": "/img/gallery-01-1300.avif",
+        "webp": "/img/gallery-01-1300.webp",
+        "jpg": "/img/gallery-01-1300.jpg"
+      }
+    ]
+  },
+  {
+    "key": "gallery-02",
+    "alt": "Portrait d'une femme en tenue traditionnelle colorée sur fond chaud",
+    "family": "ceremonie",
+    "usage": "gallery",
+    "ratio": null,
+    "width": 1300,
+    "height": 1950,
+    "variants": [
+      {
+        "w": 500,
+        "h": 750,
+        "avif": "/img/gallery-02-500.avif",
+        "webp": "/img/gallery-02-500.webp",
+        "jpg": "/img/gallery-02-500.jpg"
+      },
+      {
+        "w": 900,
+        "h": 1350,
+        "avif": "/img/gallery-02-900.avif",
+        "webp": "/img/gallery-02-900.webp",
+        "jpg": "/img/gallery-02-900.jpg"
+      },
+      {
+        "w": 1300,
+        "h": 1950,
+        "avif": "/img/gallery-02-1300.avif",
+        "webp": "/img/gallery-02-1300.webp",
+        "jpg": "/img/gallery-02-1300.jpg"
+      }
+    ]
+  },
+  {
+    "key": "gallery-03",
+    "alt": "Jeune femme présentant des motifs de textiles africains colorés",
+    "family": "tissus",
+    "usage": "gallery",
+    "ratio": null,
+    "width": 1300,
+    "height": 1950,
+    "variants": [
+      {
+        "w": 500,
+        "h": 750,
+        "avif": "/img/gallery-03-500.avif",
+        "webp": "/img/gallery-03-500.webp",
+        "jpg": "/img/gallery-03-500.jpg"
+      },
+      {
+        "w": 900,
+        "h": 1350,
+        "avif": "/img/gallery-03-900.avif",
+        "webp": "/img/gallery-03-900.webp",
+        "jpg": "/img/gallery-03-900.jpg"
+      },
+      {
+        "w": 1300,
+        "h": 1950,
+        "avif": "/img/gallery-03-1300.avif",
+        "webp": "/img/gallery-03-1300.webp",
+        "jpg": "/img/gallery-03-1300.jpg"
+      }
+    ]
+  },
+  {
+    "key": "gallery-04",
+    "alt": "Trois modèles en imprimés africains et turbans, en extérieur",
+    "family": "tissus",
+    "usage": "gallery",
+    "ratio": null,
+    "width": 1300,
+    "height": 1950,
+    "variants": [
+      {
+        "w": 500,
+        "h": 750,
+        "avif": "/img/gallery-04-500.avif",
+        "webp": "/img/gallery-04-500.webp",
+        "jpg": "/img/gallery-04-500.jpg"
+      },
+      {
+        "w": 900,
+        "h": 1350,
+        "avif": "/img/gallery-04-900.avif",
+        "webp": "/img/gallery-04-900.webp",
+        "jpg": "/img/gallery-04-900.jpg"
+      },
+      {
+        "w": 1300,
+        "h": 1950,
+        "avif": "/img/gallery-04-1300.avif",
+        "webp": "/img/gallery-04-1300.webp",
+        "jpg": "/img/gallery-04-1300.jpg"
+      }
+    ]
+  },
+  {
+    "key": "gallery-05",
+    "alt": "Homme en thobe blanc dans une boutique de vêtements traditionnels",
+    "family": "abayas",
+    "usage": "gallery",
+    "ratio": null,
+    "width": 1300,
+    "height": 1820,
+    "variants": [
+      {
+        "w": 500,
+        "h": 700,
+        "avif": "/img/gallery-05-500.avif",
+        "webp": "/img/gallery-05-500.webp",
+        "jpg": "/img/gallery-05-500.jpg"
+      },
+      {
+        "w": 900,
+        "h": 1260,
+        "avif": "/img/gallery-05-900.avif",
+        "webp": "/img/gallery-05-900.webp",
+        "jpg": "/img/gallery-05-900.jpg"
+      },
+      {
+        "w": 1300,
+        "h": 1820,
+        "avif": "/img/gallery-05-1300.avif",
+        "webp": "/img/gallery-05-1300.webp",
+        "jpg": "/img/gallery-05-1300.jpg"
+      }
+    ]
+  },
+  {
+    "key": "gallery-06",
+    "alt": "Présentoir de bijoux dorés et argentés dans une vitrine",
+    "family": "accessoires",
+    "usage": "gallery",
+    "ratio": null,
+    "width": 1300,
+    "height": 975,
+    "variants": [
+      {
+        "w": 500,
+        "h": 375,
+        "avif": "/img/gallery-06-500.avif",
+        "webp": "/img/gallery-06-500.webp",
+        "jpg": "/img/gallery-06-500.jpg"
+      },
+      {
+        "w": 900,
+        "h": 675,
+        "avif": "/img/gallery-06-900.avif",
+        "webp": "/img/gallery-06-900.webp",
+        "jpg": "/img/gallery-06-900.jpg"
+      },
+      {
+        "w": 1300,
+        "h": 975,
+        "avif": "/img/gallery-06-1300.avif",
+        "webp": "/img/gallery-06-1300.webp",
+        "jpg": "/img/gallery-06-1300.jpg"
+      }
+    ]
+  },
+  {
+    "key": "gallery-07",
+    "alt": "Flacon de parfum de luxe sur un support en bois",
+    "family": "beaute",
+    "usage": "gallery",
+    "ratio": null,
+    "width": 1300,
+    "height": 1950,
+    "variants": [
+      {
+        "w": 500,
+        "h": 750,
+        "avif": "/img/gallery-07-500.avif",
+        "webp": "/img/gallery-07-500.webp",
+        "jpg": "/img/gallery-07-500.jpg"
+      },
+      {
+        "w": 900,
+        "h": 1350,
+        "avif": "/img/gallery-07-900.avif",
+        "webp": "/img/gallery-07-900.webp",
+        "jpg": "/img/gallery-07-900.jpg"
+      },
+      {
+        "w": 1300,
+        "h": 1950,
+        "avif": "/img/gallery-07-1300.avif",
+        "webp": "/img/gallery-07-1300.webp",
+        "jpg": "/img/gallery-07-1300.jpg"
+      }
+    ]
+  },
+  {
+    "key": "gallery-08",
+    "alt": "Sacs à main en cuir disposés sur une étagère blanche",
+    "family": "accessoires",
+    "usage": "gallery",
+    "ratio": null,
+    "width": 1300,
+    "height": 867,
+    "variants": [
+      {
+        "w": 500,
+        "h": 333,
+        "avif": "/img/gallery-08-500.avif",
+        "webp": "/img/gallery-08-500.webp",
+        "jpg": "/img/gallery-08-500.jpg"
+      },
+      {
+        "w": 900,
+        "h": 600,
+        "avif": "/img/gallery-08-900.avif",
+        "webp": "/img/gallery-08-900.webp",
+        "jpg": "/img/gallery-08-900.jpg"
+      },
+      {
+        "w": 1300,
+        "h": 867,
+        "avif": "/img/gallery-08-1300.avif",
+        "webp": "/img/gallery-08-1300.webp",
+        "jpg": "/img/gallery-08-1300.jpg"
+      }
+    ]
+  },
+  {
+    "key": "gallery-09",
+    "alt": "Application d'une crème de soin dans un cadre studio",
+    "family": "beaute",
+    "usage": "gallery",
+    "ratio": null,
+    "width": 1300,
+    "height": 867,
+    "variants": [
+      {
+        "w": 500,
+        "h": 333,
+        "avif": "/img/gallery-09-500.avif",
+        "webp": "/img/gallery-09-500.webp",
+        "jpg": "/img/gallery-09-500.jpg"
+      },
+      {
+        "w": 900,
+        "h": 600,
+        "avif": "/img/gallery-09-900.avif",
+        "webp": "/img/gallery-09-900.webp",
+        "jpg": "/img/gallery-09-900.jpg"
+      },
+      {
+        "w": 1300,
+        "h": 867,
+        "avif": "/img/gallery-09-1300.avif",
+        "webp": "/img/gallery-09-1300.webp",
+        "jpg": "/img/gallery-09-1300.jpg"
+      }
+    ]
+  },
+  {
+    "key": "gallery-10",
+    "alt": "Accessoires de mode disposés en flat lay sur fond texturé",
+    "family": "accessoires",
+    "usage": "gallery",
+    "ratio": null,
+    "width": 1300,
+    "height": 1733,
+    "variants": [
+      {
+        "w": 500,
+        "h": 667,
+        "avif": "/img/gallery-10-500.avif",
+        "webp": "/img/gallery-10-500.webp",
+        "jpg": "/img/gallery-10-500.jpg"
+      },
+      {
+        "w": 900,
+        "h": 1200,
+        "avif": "/img/gallery-10-900.avif",
+        "webp": "/img/gallery-10-900.webp",
+        "jpg": "/img/gallery-10-900.jpg"
+      },
+      {
+        "w": 1300,
+        "h": 1733,
+        "avif": "/img/gallery-10-1300.avif",
+        "webp": "/img/gallery-10-1300.webp",
+        "jpg": "/img/gallery-10-1300.jpg"
+      }
+    ]
+  },
+  {
+    "key": "gallery-11",
+    "alt": "Femme en robe noire devant une voiture de luxe, scène de soirée",
+    "family": "ceremonie",
+    "usage": "gallery",
+    "ratio": null,
+    "width": 1300,
+    "height": 1950,
+    "variants": [
+      {
+        "w": 500,
+        "h": 750,
+        "avif": "/img/gallery-11-500.avif",
+        "webp": "/img/gallery-11-500.webp",
+        "jpg": "/img/gallery-11-500.jpg"
+      },
+      {
+        "w": 900,
+        "h": 1350,
+        "avif": "/img/gallery-11-900.avif",
+        "webp": "/img/gallery-11-900.webp",
+        "jpg": "/img/gallery-11-900.jpg"
+      },
+      {
+        "w": 1300,
+        "h": 1950,
+        "avif": "/img/gallery-11-1300.avif",
+        "webp": "/img/gallery-11-1300.webp",
+        "jpg": "/img/gallery-11-1300.jpg"
+      }
+    ]
+  },
+  {
+    "key": "gallery-12",
+    "alt": "Caftan brodé porté lors d'une séance photo en extérieur",
+    "family": "ceremonie",
+    "usage": "gallery",
+    "ratio": null,
+    "width": 1300,
+    "height": 1950,
+    "variants": [
+      {
+        "w": 500,
+        "h": 750,
+        "avif": "/img/gallery-12-500.avif",
+        "webp": "/img/gallery-12-500.webp",
+        "jpg": "/img/gallery-12-500.jpg"
+      },
+      {
+        "w": 900,
+        "h": 1350,
+        "avif": "/img/gallery-12-900.avif",
+        "webp": "/img/gallery-12-900.webp",
+        "jpg": "/img/gallery-12-900.jpg"
+      },
+      {
+        "w": 1300,
+        "h": 1950,
+        "avif": "/img/gallery-12-1300.avif",
+        "webp": "/img/gallery-12-1300.webp",
+        "jpg": "/img/gallery-12-1300.jpg"
+      }
+    ]
+  },
+  {
+    "key": "gallery-13",
+    "alt": "Femme en tenue marocaine traditionnelle dans une ruelle colorée",
+    "family": "ceremonie",
+    "usage": "gallery",
+    "ratio": null,
+    "width": 1300,
+    "height": 1950,
+    "variants": [
+      {
+        "w": 500,
+        "h": 750,
+        "avif": "/img/gallery-13-500.avif",
+        "webp": "/img/gallery-13-500.webp",
+        "jpg": "/img/gallery-13-500.jpg"
+      },
+      {
+        "w": 900,
+        "h": 1350,
+        "avif": "/img/gallery-13-900.avif",
+        "webp": "/img/gallery-13-900.webp",
+        "jpg": "/img/gallery-13-900.jpg"
+      },
+      {
+        "w": 1300,
+        "h": 1950,
+        "avif": "/img/gallery-13-1300.avif",
+        "webp": "/img/gallery-13-1300.webp",
+        "jpg": "/img/gallery-13-1300.jpg"
+      }
+    ]
+  },
+  {
+    "key": "gallery-14",
+    "alt": "Détail d'escarpins noirs élégants",
+    "family": "accessoires",
+    "usage": "gallery",
+    "ratio": null,
+    "width": 1300,
+    "height": 1950,
+    "variants": [
+      {
+        "w": 500,
+        "h": 750,
+        "avif": "/img/gallery-14-500.avif",
+        "webp": "/img/gallery-14-500.webp",
+        "jpg": "/img/gallery-14-500.jpg"
+      },
+      {
+        "w": 900,
+        "h": 1350,
+        "avif": "/img/gallery-14-900.avif",
+        "webp": "/img/gallery-14-900.webp",
+        "jpg": "/img/gallery-14-900.jpg"
+      },
+      {
+        "w": 1300,
+        "h": 1950,
+        "avif": "/img/gallery-14-1300.avif",
+        "webp": "/img/gallery-14-1300.webp",
+        "jpg": "/img/gallery-14-1300.jpg"
+      }
+    ]
+  }
+]
