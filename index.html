@@ -22,8 +22,10 @@
 <link rel="icon" type="image/svg+xml" href="/quma-fashion/icons/favicon.svg">
 <link rel="apple-touch-icon" href="/quma-fashion/icons/apple-touch-icon.png">
 <link rel="manifest" href="/quma-fashion/site.webmanifest">
-<link rel="preload" as="font" type="font/woff2" href="/quma-fashion/fonts/CormorantGaramond-700-normal.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="/quma-fashion/fonts/Inter-400-normal.woff2" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..600;1,6..96,400..600&display=swap">
 <link rel="stylesheet" href="/quma-fashion/css/fonts.css">
 <link rel="stylesheet" href="/quma-fashion/css/style.css">
 <script src="/quma-fashion/js/boot.js"></script>
@@ -56,7 +58,7 @@
 </script>
 
 </head>
-<body>
+<body class="home">
 <a class="skip-link" href="#main">Aller au contenu</a>
 <div class="demo-banner" role="note">
   <span class="demo-banner__dot" aria-hidden="true"></span>
@@ -102,69 +104,98 @@
 </header>
 
 <main id="main">
-  <section class="hero" data-hero aria-label="Présentation de Quma Fashion">
-    <div class="container hero__inner">
-      <div class="hero__content">
-        <p class="eyebrow hero__eyebrow" data-hero>African Royal Elegance</p>
-        <h1 class="hero__title">
-          <span class="line"><span>La mode et la <em class="hero__accent">beauté<svg class="hero__swash" viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true"><path d="M3 14 C 70 4, 150 4, 297 10" /></svg></em></span></span>
+
+  <!-- 1. Hero : la salle du palais -->
+  <section class="rh" data-hero aria-label="Présentation de Quma Fashion">
+    <div class="rh__glow" aria-hidden="true"></div>
+    <div class="container rh__inner">
+      <div class="rh__text">
+        <p class="rh__eyebrow" data-hero>African Royal Elegance <span>Dakar</span></p>
+        <h1 class="rh__title">
+          <span class="line"><span>L'élégance</span></span>
+          <span class="line"><span><em>royale</em>,</span></span>
           <span class="line"><span>à votre portée.</span></span>
         </h1>
-        <p class="hero__lead" data-hero>Bienvenue chez Quma Fashion. Découvrez un univers dédié à la mode et à la beauté, où se rencontrent tenues élancées, accessoires et essentiels du quotidien.</p>
-        <div class="hero__actions" data-hero>
-          <a class="btn btn--plum" href="/quma-fashion/univers/" data-magnetic>Découvrir nos univers</a>
-          <a class="btn btn--ghost" href="/quma-fashion/contact/#demande" data-magnetic>Nous écrire</a>
+        <p class="rh__lead" data-hero>Caftans de mariée, abayas pour toute la famille, bijoux, parfums, soins et tissus : la mode et la beauté réunies dans une seule boutique.</p>
+        <div class="rh__actions" data-hero>
+          <a class="btn btn--gold" href="/quma-fashion/univers/" data-magnetic>Découvrir nos univers</a>
+          <a class="btn btn--ghost-light" href="/quma-fashion/contact/#demande" data-magnetic>Écrire sur WhatsApp</a>
         </div>
-        <p class="hero__phone" data-hero>Téléphone de la boutique : <a href="tel:+221776884156">77 688 41 56</a></p>
       </div>
-      <div class="hero__visual">
-        <div class="hero__media" data-hero>
-          <picture><source type="image/avif" srcset="/quma-fashion/img/hero-800.avif 800w, /quma-fashion/img/hero-1200.avif 1200w, /quma-fashion/img/hero-1600.avif 1600w" sizes="(max-width: 900px) 100vw, 40vw"><source type="image/webp" srcset="/quma-fashion/img/hero-800.webp 800w, /quma-fashion/img/hero-1200.webp 1200w, /quma-fashion/img/hero-1600.webp 1600w" sizes="(max-width: 900px) 100vw, 40vw"><img src="/quma-fashion/img/hero-1600.jpg" sizes="(max-width: 900px) 100vw, 40vw" width="1600" height="2133" alt="Femme élégante en tenue traditionnelle africaine colorée devant un escalier orné d'œuvres d'art" fetchpriority="high"></picture>
-        </div>
-        <div class="hero__badge" data-float>
-          <span class="hero__badge-num"><span data-count="11">11</span></span>
-          <span class="hero__badge-txt">univers sous un même toit : mode, beauté et tissus</span>
-        </div>
-        <span class="hero__orb hero__orb--a" aria-hidden="true"></span>
-        <span class="hero__orb hero__orb--b" aria-hidden="true"></span>
+      <div class="rh__arches" data-arches>
+        <figure class="arch arch--side arch--l" data-depth="0.6">
+          <picture><source type="image/avif" srcset="/quma-fashion/img/caftan-mariee-480.avif 480w, /quma-fashion/img/caftan-mariee-800.avif 800w, /quma-fashion/img/caftan-mariee-1100.avif 1100w" sizes="(max-width: 900px) 30vw, 14vw"><source type="image/webp" srcset="/quma-fashion/img/caftan-mariee-480.webp 480w, /quma-fashion/img/caftan-mariee-800.webp 800w, /quma-fashion/img/caftan-mariee-1100.webp 1100w" sizes="(max-width: 900px) 30vw, 14vw"><img class="arch__img" src="/quma-fashion/img/caftan-mariee-1100.jpg" sizes="(max-width: 900px) 30vw, 14vw" width="1100" height="1375" alt="Caftan de mariée brodé porté devant une architecture classique" loading="eager"></picture>
+        </figure>
+        <figure class="arch arch--main" data-depth="1">
+          <picture><source type="image/avif" srcset="/quma-fashion/img/hero-800.avif 800w, /quma-fashion/img/hero-1200.avif 1200w, /quma-fashion/img/hero-1600.avif 1600w" sizes="(max-width: 900px) 50vw, 24vw"><source type="image/webp" srcset="/quma-fashion/img/hero-800.webp 800w, /quma-fashion/img/hero-1200.webp 1200w, /quma-fashion/img/hero-1600.webp 1600w" sizes="(max-width: 900px) 50vw, 24vw"><img class="arch__img" src="/quma-fashion/img/hero-1600.jpg" sizes="(max-width: 900px) 50vw, 24vw" width="1600" height="2133" alt="Femme élégante en tenue traditionnelle africaine colorée devant un escalier orné d'œuvres d'art" fetchpriority="high"></picture>
+        </figure>
+        <figure class="arch arch--side arch--r" data-depth="0.4">
+          <picture><source type="image/avif" srcset="/quma-fashion/img/gallery-02-500.avif 500w, /quma-fashion/img/gallery-02-900.avif 900w, /quma-fashion/img/gallery-02-1300.avif 1300w" sizes="(max-width: 900px) 30vw, 14vw"><source type="image/webp" srcset="/quma-fashion/img/gallery-02-500.webp 500w, /quma-fashion/img/gallery-02-900.webp 900w, /quma-fashion/img/gallery-02-1300.webp 1300w" sizes="(max-width: 900px) 30vw, 14vw"><img class="arch__img" src="/quma-fashion/img/gallery-02-1300.jpg" sizes="(max-width: 900px) 30vw, 14vw" width="1300" height="1950" alt="Portrait d'une femme en tenue traditionnelle colorée sur fond chaud" loading="eager"></picture>
+        </figure>
       </div>
+    </div>
+    <div class="container rh__foot" data-hero>
+      <p><strong data-count="11">11</strong> univers sous un même toit</p>
+      <p class="rh__phone">Boutique <a href="tel:+221776884156">77 688 41 56</a></p>
+      <p class="rh__scroll" aria-hidden="true"><span></span>Défiler</p>
     </div>
   </section>
 
-  <div class="marquee" aria-hidden="true">
-    <div class="marquee__track">
-      <div class="marquee__group">
-        <span>Caftans de mariée</span><i></i><span>Abayas</span><i></i><span>Chaussures &amp; sacs</span><i></i><span>Parfums &amp; soins</span><i></i><span>Tissus</span><i></i><span>African Royal Elegance</span><i></i>
+  <!-- 2. Grand bandeau défilant -->
+  <div class="bigmarquee" aria-hidden="true">
+    <div class="bigmarquee__track">
+      <div class="bigmarquee__group">
+        <span>Caftans de mariée</span><i></i><span class="o">Abayas</span><i></i><span>Bijoux</span><i></i><span class="o">Parfums</span><i></i><span>Tissus</span><i></i>
       </div>
-      <div class="marquee__group" data-dup>
-        <span>Caftans de mariée</span><i></i><span>Abayas</span><i></i><span>Chaussures &amp; sacs</span><i></i><span>Parfums &amp; soins</span><i></i><span>Tissus</span><i></i><span>African Royal Elegance</span><i></i>
+      <div class="bigmarquee__group">
+        <span>Caftans de mariée</span><i></i><span class="o">Abayas</span><i></i><span>Bijoux</span><i></i><span class="o">Parfums</span><i></i><span>Tissus</span><i></i>
       </div>
     </div>
   </div>
 
-  <section class="section section--tight">
-    <div class="container">
-      <div class="split">
-        <div class="split__content" data-reveal>
-          <p class="eyebrow">Notre maison</p>
-          <h2 class="split__title" data-split>Une élégance royale, au service de vos moments</h2>
-          <p>Chez Quma Fashion, la mode et la beauté se choisissent au même endroit : la tenue, les chaussures, le sac, le bijou et le parfum qui vont avec.</p>
-          <p>Du caftan de mariée à l'abaya de tous les jours, pour femme, homme et enfant, nous vous aidons à composer une allure complète, pour les grands moments comme pour le quotidien.</p>
-          <p class="split__cta"><a class="btn btn--ghost" href="/quma-fashion/univers/">Explorer les univers</a></p>
-        </div>
-        <div class="split__media split__media--tall">
-          <picture><source type="image/avif" srcset="/quma-fashion/img/boutique-2-600.avif 600w, /quma-fashion/img/boutique-2-900.avif 900w, /quma-fashion/img/boutique-2-1200.avif 1200w" sizes="(max-width: 980px) 100vw, 45vw"><source type="image/webp" srcset="/quma-fashion/img/boutique-2-600.webp 600w, /quma-fashion/img/boutique-2-900.webp 900w, /quma-fashion/img/boutique-2-1200.webp 1200w" sizes="(max-width: 980px) 100vw, 45vw"><img src="/quma-fashion/img/boutique-2-1200.jpg" sizes="(max-width: 980px) 100vw, 45vw" width="1200" height="1500" alt="Intérieur d'une boutique de mode contemporaine, présentoirs et décor soigné" loading="lazy"></picture>
-        </div>
+  <!-- 3. Manifeste qui se colore au défilement -->
+  <section class="manifest">
+    <div class="container manifest__inner">
+      <p class="eyebrow" data-reveal>Notre maison</p>
+      <p class="manifest__text" data-scrub-text>Du caftan de mariée à l'abaya de tous les jours, nous habillons toute la famille, femme, homme et enfant. Puis nous complétons l'allure : les chaussures, le sac, le bijou et le parfum qui vont avec.</p>
+      <div class="manifest__sign" data-reveal>
+        <span class="manifest__mono" aria-hidden="true">QF</span>
+        <span>La mode et la beauté à votre portée.</span>
       </div>
     </div>
   </section>
 
+  <!-- 4. Index des 11 univers -->
+  <section class="index" aria-labelledby="index-title">
+    <div class="container">
+      <div class="index__head">
+        <p class="eyebrow" data-reveal>Nos univers</p>
+        <h2 id="index-title" data-split>Onze univers, une seule élégance</h2>
+      </div>
+      <ol class="index__list" data-index>
+        <li><a href="/quma-fashion/univers/#caftans-mariee" class="index__row" style="--c: var(--ruby)"><span class="index__num">01</span><span class="index__name">Caftans de mariée</span><span class="index__tag">Cérémonie</span><picture><source type="image/avif" srcset="/quma-fashion/img/caftan-mariee-480.avif 480w, /quma-fashion/img/caftan-mariee-800.avif 800w, /quma-fashion/img/caftan-mariee-1100.avif 1100w" sizes="96px"><source type="image/webp" srcset="/quma-fashion/img/caftan-mariee-480.webp 480w, /quma-fashion/img/caftan-mariee-800.webp 800w, /quma-fashion/img/caftan-mariee-1100.webp 1100w" sizes="96px"><img class="index__thumb" src="/quma-fashion/img/caftan-mariee-1100.jpg" sizes="96px" width="1100" height="1375" alt="Caftan de mariée brodé porté devant une architecture classique" loading="lazy"></picture></a></li>
+        <li><a href="/quma-fashion/univers/#abaya-femme" class="index__row" style="--c: var(--fuchsia)"><span class="index__num">02</span><span class="index__name">Abayas femme</span><span class="index__tag">Abayas</span><picture><source type="image/avif" srcset="/quma-fashion/img/abaya-femme-480.avif 480w, /quma-fashion/img/abaya-femme-800.avif 800w, /quma-fashion/img/abaya-femme-1100.avif 1100w" sizes="96px"><source type="image/webp" srcset="/quma-fashion/img/abaya-femme-480.webp 480w, /quma-fashion/img/abaya-femme-800.webp 800w, /quma-fashion/img/abaya-femme-1100.webp 1100w" sizes="96px"><img class="index__thumb" src="/quma-fashion/img/abaya-femme-1100.jpg" sizes="96px" width="1100" height="1375" alt="Portrait d'une femme en abaya sombre et hijab, allure élégante" loading="lazy"></picture></a></li>
+        <li><a href="/quma-fashion/univers/#abaya-homme" class="index__row" style="--c: var(--royal)"><span class="index__num">03</span><span class="index__name">Abayas homme</span><span class="index__tag">Abayas</span><picture><source type="image/avif" srcset="/quma-fashion/img/abaya-homme-480.avif 480w, /quma-fashion/img/abaya-homme-800.avif 800w, /quma-fashion/img/abaya-homme-1100.avif 1100w" sizes="96px"><source type="image/webp" srcset="/quma-fashion/img/abaya-homme-480.webp 480w, /quma-fashion/img/abaya-homme-800.webp 800w, /quma-fashion/img/abaya-homme-1100.webp 1100w" sizes="96px"><img class="index__thumb" src="/quma-fashion/img/abaya-homme-1100.jpg" sizes="96px" width="1100" height="1375" alt="Homme en thobe blanc traditionnel, portrait élégant" loading="lazy"></picture></a></li>
+        <li><a href="/quma-fashion/univers/#abaya-enfant" class="index__row" style="--c: var(--saffron)"><span class="index__num">04</span><span class="index__name">Abayas enfant</span><span class="index__tag">Abayas</span><picture><source type="image/avif" srcset="/quma-fashion/img/abaya-enfant-480.avif 480w, /quma-fashion/img/abaya-enfant-800.avif 800w, /quma-fashion/img/abaya-enfant-1100.avif 1100w" sizes="96px"><source type="image/webp" srcset="/quma-fashion/img/abaya-enfant-480.webp 480w, /quma-fashion/img/abaya-enfant-800.webp 800w, /quma-fashion/img/abaya-enfant-1100.webp 1100w" sizes="96px"><img class="index__thumb" src="/quma-fashion/img/abaya-enfant-1100.jpg" sizes="96px" width="1100" height="1375" alt="Enfants en tenue traditionnelle devant la mosquée Jama Masjid" loading="lazy"></picture></a></li>
+        <li><a href="/quma-fashion/univers/#chaussures" class="index__row" style="--c: var(--royal)"><span class="index__num">05</span><span class="index__name">Chaussures</span><span class="index__tag">Accessoires</span><picture><source type="image/avif" srcset="/quma-fashion/img/chaussures-480.avif 480w, /quma-fashion/img/chaussures-800.avif 800w, /quma-fashion/img/chaussures-1100.avif 1100w" sizes="96px"><source type="image/webp" srcset="/quma-fashion/img/chaussures-480.webp 480w, /quma-fashion/img/chaussures-800.webp 800w, /quma-fashion/img/chaussures-1100.webp 1100w" sizes="96px"><img class="index__thumb" src="/quma-fashion/img/chaussures-1100.jpg" sizes="96px" width="1100" height="1375" alt="Escarpins noirs à détail chaîne, photographie de mode" loading="lazy"></picture></a></li>
+        <li><a href="/quma-fashion/univers/#sacs" class="index__row" style="--c: var(--ruby)"><span class="index__num">06</span><span class="index__name">Sacs</span><span class="index__tag">Accessoires</span><picture><source type="image/avif" srcset="/quma-fashion/img/sacs-480.avif 480w, /quma-fashion/img/sacs-800.avif 800w, /quma-fashion/img/sacs-1100.avif 1100w" sizes="96px"><source type="image/webp" srcset="/quma-fashion/img/sacs-480.webp 480w, /quma-fashion/img/sacs-800.webp 800w, /quma-fashion/img/sacs-1100.webp 1100w" sizes="96px"><img class="index__thumb" src="/quma-fashion/img/sacs-1100.jpg" sizes="96px" width="1100" height="1375" alt="Sac à main en cuir brun avec anses beiges" loading="lazy"></picture></a></li>
+        <li><a href="/quma-fashion/univers/#bijoux" class="index__row" style="--c: var(--saffron)"><span class="index__num">07</span><span class="index__name">Accessoires &amp; bijoux</span><span class="index__tag">Accessoires</span><picture><source type="image/avif" srcset="/quma-fashion/img/bijoux-480.avif 480w, /quma-fashion/img/bijoux-800.avif 800w, /quma-fashion/img/bijoux-1100.avif 1100w" sizes="96px"><source type="image/webp" srcset="/quma-fashion/img/bijoux-480.webp 480w, /quma-fashion/img/bijoux-800.webp 800w, /quma-fashion/img/bijoux-1100.webp 1100w" sizes="96px"><img class="index__thumb" src="/quma-fashion/img/bijoux-1100.jpg" sizes="96px" width="1100" height="1375" alt="Présentoir de bijoux dorés, colliers et bracelets" loading="lazy"></picture></a></li>
+        <li><a href="/quma-fashion/univers/#parfums" class="index__row" style="--c: var(--fuchsia)"><span class="index__num">08</span><span class="index__name">Parfums de marque</span><span class="index__tag">Beauté</span><picture><source type="image/avif" srcset="/quma-fashion/img/parfums-480.avif 480w, /quma-fashion/img/parfums-800.avif 800w, /quma-fashion/img/parfums-1100.avif 1100w" sizes="96px"><source type="image/webp" srcset="/quma-fashion/img/parfums-480.webp 480w, /quma-fashion/img/parfums-800.webp 800w, /quma-fashion/img/parfums-1100.webp 1100w" sizes="96px"><img class="index__thumb" src="/quma-fashion/img/parfums-1100.jpg" sizes="96px" width="1100" height="1375" alt="Flacons de parfum élégants sur une surface en marbre" loading="lazy"></picture></a></li>
+        <li><a href="/quma-fashion/univers/#huiles-brutes" class="index__row" style="--c: var(--saffron)"><span class="index__num">09</span><span class="index__name">Huiles brutes</span><span class="index__tag">Beauté</span><picture><source type="image/avif" srcset="/quma-fashion/img/huiles-480.avif 480w, /quma-fashion/img/huiles-800.avif 800w, /quma-fashion/img/huiles-1100.avif 1100w" sizes="96px"><source type="image/webp" srcset="/quma-fashion/img/huiles-480.webp 480w, /quma-fashion/img/huiles-800.webp 800w, /quma-fashion/img/huiles-1100.webp 1100w" sizes="96px"><img class="index__thumb" src="/quma-fashion/img/huiles-1100.jpg" sizes="96px" width="1100" height="1375" alt="Flacon compte-gouttes en verre ambré sur pierre, lumière chaude" loading="lazy"></picture></a></li>
+        <li><a href="/quma-fashion/univers/#soins" class="index__row" style="--c: var(--fuchsia)"><span class="index__num">10</span><span class="index__name">Laits de corps &amp; crèmes visage</span><span class="index__tag">Beauté</span><picture><source type="image/avif" srcset="/quma-fashion/img/soins-480.avif 480w, /quma-fashion/img/soins-800.avif 800w, /quma-fashion/img/soins-1100.avif 1100w" sizes="96px"><source type="image/webp" srcset="/quma-fashion/img/soins-480.webp 480w, /quma-fashion/img/soins-800.webp 800w, /quma-fashion/img/soins-1100.webp 1100w" sizes="96px"><img class="index__thumb" src="/quma-fashion/img/soins-1100.jpg" sizes="96px" width="1100" height="1375" alt="Pot de crème de soin luxueux entouré de packaging doré" loading="lazy"></picture></a></li>
+        <li><a href="/quma-fashion/univers/#tissus" class="index__row" style="--c: var(--royal)"><span class="index__num">11</span><span class="index__name">Tissus</span><span class="index__tag">Matières</span><picture><source type="image/avif" srcset="/quma-fashion/img/tissus-480.avif 480w, /quma-fashion/img/tissus-800.avif 800w, /quma-fashion/img/tissus-1100.avif 1100w" sizes="96px"><source type="image/webp" srcset="/quma-fashion/img/tissus-480.webp 480w, /quma-fashion/img/tissus-800.webp 800w, /quma-fashion/img/tissus-1100.webp 1100w" sizes="96px"><img class="index__thumb" src="/quma-fashion/img/tissus-1100.jpg" sizes="96px" width="1100" height="1200" alt="Tissus africains colorés aux motifs variés" loading="lazy"></picture></a></li>
+      </ol>
+    </div>
+    <div class="index__preview" aria-hidden="true"><img alt="" data-preview></div>
+  </section>
+
+  <!-- 5. L'affiche réelle de la boutique -->
   <section class="poster" data-poster aria-labelledby="poster-title">
     <div class="container poster__inner">
       <div class="poster__text">
         <p class="eyebrow eyebrow--light" data-reveal>Notre affiche</p>
         <h2 id="poster-title" class="poster__title" data-split>Tout Quma Fashion, sur une seule affiche</h2>
-        <p class="poster__lead" data-reveal>Caftans de mariée, abayas pour toute la famille, chaussures, sacs, bijoux, parfums de marque, huiles brutes, laits de corps, crèmes visage et tissus : notre affiche réunit tout ce que vous trouverez en boutique.</p>
+        <p class="poster__lead" data-reveal>Notre affiche réunit tout ce que vous trouverez en boutique, des grandes cérémonies aux soins de tous les jours.</p>
         <ul class="poster__stats" data-reveal>
           <li><strong data-count="11">11</strong><span>univers</span></li>
           <li><strong data-count="3">3</strong><span>lignes d'abayas : femme, homme, enfant</span></li>
@@ -180,99 +211,54 @@
     </div>
   </section>
 
-  <section class="section">
+  <!-- 6. Lookbook horizontal -->
+  <section class="look" aria-labelledby="look-title" data-look>
+    <div class="look__pin">
+      <div class="container look__head">
+        <p class="eyebrow" data-reveal>Lookbook</p>
+        <h2 id="look-title" data-split>Couleurs, broderies et matières</h2>
+        <p class="look__note" data-reveal>Photos d'illustration, à remplacer par celles de la boutique.</p>
+      </div>
+      <div class="look__track" data-look-track>
+        <figure class="look__card look__card--arch"><picture><source type="image/avif" srcset="/quma-fashion/img/abaya-femme-480.avif 480w, /quma-fashion/img/abaya-femme-800.avif 800w, /quma-fashion/img/abaya-femme-1100.avif 1100w" sizes="(max-width: 720px) 70vw, 26vw"><source type="image/webp" srcset="/quma-fashion/img/abaya-femme-480.webp 480w, /quma-fashion/img/abaya-femme-800.webp 800w, /quma-fashion/img/abaya-femme-1100.webp 1100w" sizes="(max-width: 720px) 70vw, 26vw"><img src="/quma-fashion/img/abaya-femme-1100.jpg" sizes="(max-width: 720px) 70vw, 26vw" width="1100" height="1375" alt="Portrait d'une femme en abaya sombre et hijab, allure élégante" loading="lazy"></picture><figcaption><span>01</span>Abaya brodée</figcaption></figure>
+        <figure class="look__card look__card--tall"><picture><source type="image/avif" srcset="/quma-fashion/img/gallery-12-500.avif 500w, /quma-fashion/img/gallery-12-900.avif 900w, /quma-fashion/img/gallery-12-1300.avif 1300w" sizes="(max-width: 720px) 70vw, 30vw"><source type="image/webp" srcset="/quma-fashion/img/gallery-12-500.webp 500w, /quma-fashion/img/gallery-12-900.webp 900w, /quma-fashion/img/gallery-12-1300.webp 1300w" sizes="(max-width: 720px) 70vw, 30vw"><img src="/quma-fashion/img/gallery-12-1300.jpg" sizes="(max-width: 720px) 70vw, 30vw" width="1300" height="1950" alt="Caftan brodé porté lors d'une séance photo en extérieur" loading="lazy"></picture><figcaption><span>02</span>Caftan de cérémonie</figcaption></figure>
+        <figure class="look__card"><picture><source type="image/avif" srcset="/quma-fashion/img/gallery-03-500.avif 500w, /quma-fashion/img/gallery-03-900.avif 900w, /quma-fashion/img/gallery-03-1300.avif 1300w" sizes="(max-width: 720px) 70vw, 26vw"><source type="image/webp" srcset="/quma-fashion/img/gallery-03-500.webp 500w, /quma-fashion/img/gallery-03-900.webp 900w, /quma-fashion/img/gallery-03-1300.webp 1300w" sizes="(max-width: 720px) 70vw, 26vw"><img src="/quma-fashion/img/gallery-03-1300.jpg" sizes="(max-width: 720px) 70vw, 26vw" width="1300" height="1950" alt="Jeune femme présentant des motifs de textiles africains colorés" loading="lazy"></picture><figcaption><span>03</span>Wax et pagnes</figcaption></figure>
+        <figure class="look__card look__card--arch"><picture><source type="image/avif" srcset="/quma-fashion/img/gallery-13-500.avif 500w, /quma-fashion/img/gallery-13-900.avif 900w, /quma-fashion/img/gallery-13-1300.avif 1300w" sizes="(max-width: 720px) 70vw, 26vw"><source type="image/webp" srcset="/quma-fashion/img/gallery-13-500.webp 500w, /quma-fashion/img/gallery-13-900.webp 900w, /quma-fashion/img/gallery-13-1300.webp 1300w" sizes="(max-width: 720px) 70vw, 26vw"><img src="/quma-fashion/img/gallery-13-1300.jpg" sizes="(max-width: 720px) 70vw, 26vw" width="1300" height="1950" alt="Femme en tenue marocaine traditionnelle dans une ruelle colorée" loading="lazy"></picture><figcaption><span>04</span>Abaya rayée</figcaption></figure>
+        <figure class="look__card look__card--tall"><picture><source type="image/avif" srcset="/quma-fashion/img/bijoux-480.avif 480w, /quma-fashion/img/bijoux-800.avif 800w, /quma-fashion/img/bijoux-1100.avif 1100w" sizes="(max-width: 720px) 70vw, 30vw"><source type="image/webp" srcset="/quma-fashion/img/bijoux-480.webp 480w, /quma-fashion/img/bijoux-800.webp 800w, /quma-fashion/img/bijoux-1100.webp 1100w" sizes="(max-width: 720px) 70vw, 30vw"><img src="/quma-fashion/img/bijoux-1100.jpg" sizes="(max-width: 720px) 70vw, 30vw" width="1100" height="1375" alt="Présentoir de bijoux dorés, colliers et bracelets" loading="lazy"></picture><figcaption><span>05</span>Parures dorées</figcaption></figure>
+        <figure class="look__card"><picture><source type="image/avif" srcset="/quma-fashion/img/gallery-04-500.avif 500w, /quma-fashion/img/gallery-04-900.avif 900w, /quma-fashion/img/gallery-04-1300.avif 1300w" sizes="(max-width: 720px) 70vw, 26vw"><source type="image/webp" srcset="/quma-fashion/img/gallery-04-500.webp 500w, /quma-fashion/img/gallery-04-900.webp 900w, /quma-fashion/img/gallery-04-1300.webp 1300w" sizes="(max-width: 720px) 70vw, 26vw"><img src="/quma-fashion/img/gallery-04-1300.jpg" sizes="(max-width: 720px) 70vw, 26vw" width="1300" height="1950" alt="Trois modèles en imprimés africains et turbans, en extérieur" loading="lazy"></picture><figcaption><span>06</span>Couleurs d'Afrique</figcaption></figure>
+        <figure class="look__card look__card--arch"><picture><source type="image/avif" srcset="/quma-fashion/img/tissus-480.avif 480w, /quma-fashion/img/tissus-800.avif 800w, /quma-fashion/img/tissus-1100.avif 1100w" sizes="(max-width: 720px) 70vw, 26vw"><source type="image/webp" srcset="/quma-fashion/img/tissus-480.webp 480w, /quma-fashion/img/tissus-800.webp 800w, /quma-fashion/img/tissus-1100.webp 1100w" sizes="(max-width: 720px) 70vw, 26vw"><img src="/quma-fashion/img/tissus-1100.jpg" sizes="(max-width: 720px) 70vw, 26vw" width="1100" height="1200" alt="Tissus africains colorés aux motifs variés" loading="lazy"></picture><figcaption><span>07</span>Tissus</figcaption></figure>
+        <a class="look__end" href="/quma-fashion/galerie/">Voir toute la galerie<span aria-hidden="true"></span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Comment ça se passe -->
+  <section class="steps" aria-labelledby="steps-title">
     <div class="container">
-      <div class="section__head" data-reveal>
-        <p class="eyebrow">Nos univers</p>
-        <h2 data-split>Cinq familles, une seule élégance</h2>
-        <p>Les grandes familles qui organisent la découverte Quma Fashion.</p>
+      <div class="steps__head">
+        <p class="eyebrow" data-reveal>Simple et direct</p>
+        <h2 id="steps-title" data-split>Comment ça se passe</h2>
       </div>
-      <div class="families">
-        <a class="family-card" href="/quma-fashion/univers/#ceremonie" data-reveal>
-          <span class="family-card__media"><picture><source type="image/avif" srcset="/quma-fashion/img/caftan-mariee-480.avif 480w, /quma-fashion/img/caftan-mariee-800.avif 800w, /quma-fashion/img/caftan-mariee-1100.avif 1100w" sizes="(max-width: 720px) 50vw, (max-width: 1120px) 33vw, 20vw"><source type="image/webp" srcset="/quma-fashion/img/caftan-mariee-480.webp 480w, /quma-fashion/img/caftan-mariee-800.webp 800w, /quma-fashion/img/caftan-mariee-1100.webp 1100w" sizes="(max-width: 720px) 50vw, (max-width: 1120px) 33vw, 20vw"><img src="/quma-fashion/img/caftan-mariee-1100.jpg" sizes="(max-width: 720px) 50vw, (max-width: 1120px) 33vw, 20vw" width="1100" height="1375" alt="Caftan de mariée brodé porté devant une architecture classique" loading="lazy"></picture></span>
-          <span class="family-card__meta">
-            <span class="family-card__kicker">Cérémonie</span>
-            <span class="family-card__title">Caftans de mariée</span>
-          </span>
-        </a>
-        <a class="family-card" href="/quma-fashion/univers/#abayas" data-reveal>
-          <span class="family-card__media"><picture><source type="image/avif" srcset="/quma-fashion/img/abaya-femme-480.avif 480w, /quma-fashion/img/abaya-femme-800.avif 800w, /quma-fashion/img/abaya-femme-1100.avif 1100w" sizes="(max-width: 720px) 50vw, (max-width: 1120px) 33vw, 20vw"><source type="image/webp" srcset="/quma-fashion/img/abaya-femme-480.webp 480w, /quma-fashion/img/abaya-femme-800.webp 800w, /quma-fashion/img/abaya-femme-1100.webp 1100w" sizes="(max-width: 720px) 50vw, (max-width: 1120px) 33vw, 20vw"><img src="/quma-fashion/img/abaya-femme-1100.jpg" sizes="(max-width: 720px) 50vw, (max-width: 1120px) 33vw, 20vw" width="1100" height="1375" alt="Portrait d'une femme en abaya sombre et hijab, allure élégante" loading="lazy"></picture></span>
-          <span class="family-card__meta">
-            <span class="family-card__kicker">Abayas</span>
-            <span class="family-card__title">Abayas femme</span>
-          </span>
-        </a>
-        <a class="family-card" href="/quma-fashion/univers/#accessoires" data-reveal>
-          <span class="family-card__media"><picture><source type="image/avif" srcset="/quma-fashion/img/sacs-480.avif 480w, /quma-fashion/img/sacs-800.avif 800w, /quma-fashion/img/sacs-1100.avif 1100w" sizes="(max-width: 720px) 50vw, (max-width: 1120px) 33vw, 20vw"><source type="image/webp" srcset="/quma-fashion/img/sacs-480.webp 480w, /quma-fashion/img/sacs-800.webp 800w, /quma-fashion/img/sacs-1100.webp 1100w" sizes="(max-width: 720px) 50vw, (max-width: 1120px) 33vw, 20vw"><img src="/quma-fashion/img/sacs-1100.jpg" sizes="(max-width: 720px) 50vw, (max-width: 1120px) 33vw, 20vw" width="1100" height="1375" alt="Sac à main en cuir brun avec anses beiges" loading="lazy"></picture></span>
-          <span class="family-card__meta">
-            <span class="family-card__kicker">Accessoires</span>
-            <span class="family-card__title">Chaussures &amp; sacs</span>
-          </span>
-        </a>
-        <a class="family-card" href="/quma-fashion/univers/#beaute" data-reveal>
-          <span class="family-card__media"><picture><source type="image/avif" srcset="/quma-fashion/img/parfums-480.avif 480w, /quma-fashion/img/parfums-800.avif 800w, /quma-fashion/img/parfums-1100.avif 1100w" sizes="(max-width: 720px) 50vw, (max-width: 1120px) 33vw, 20vw"><source type="image/webp" srcset="/quma-fashion/img/parfums-480.webp 480w, /quma-fashion/img/parfums-800.webp 800w, /quma-fashion/img/parfums-1100.webp 1100w" sizes="(max-width: 720px) 50vw, (max-width: 1120px) 33vw, 20vw"><img src="/quma-fashion/img/parfums-1100.jpg" sizes="(max-width: 720px) 50vw, (max-width: 1120px) 33vw, 20vw" width="1100" height="1375" alt="Flacons de parfum élégants sur une surface en marbre" loading="lazy"></picture></span>
-          <span class="family-card__meta">
-            <span class="family-card__kicker">Beauté</span>
-            <span class="family-card__title">Parfums &amp; soins</span>
-          </span>
-        </a>
-        <a class="family-card" href="/quma-fashion/univers/#tissus" data-reveal>
-          <span class="family-card__media"><picture><source type="image/avif" srcset="/quma-fashion/img/tissus-480.avif 480w, /quma-fashion/img/tissus-800.avif 800w, /quma-fashion/img/tissus-1100.avif 1100w" sizes="(max-width: 720px) 50vw, (max-width: 1120px) 33vw, 20vw"><source type="image/webp" srcset="/quma-fashion/img/tissus-480.webp 480w, /quma-fashion/img/tissus-800.webp 800w, /quma-fashion/img/tissus-1100.webp 1100w" sizes="(max-width: 720px) 50vw, (max-width: 1120px) 33vw, 20vw"><img src="/quma-fashion/img/tissus-1100.jpg" sizes="(max-width: 720px) 50vw, (max-width: 1120px) 33vw, 20vw" width="1100" height="1200" alt="Tissus africains colorés aux motifs variés" loading="lazy"></picture></span>
-          <span class="family-card__meta">
-            <span class="family-card__kicker">Matières</span>
-            <span class="family-card__title">Tissus</span>
-          </span>
-        </a>
-      </div>
+      <ol class="steps__list">
+        <li class="step" data-reveal><span class="step__num">I</span><h3>Choisissez votre univers</h3><p>Caftan pour un mariage, abaya, parfum ou tissu : parcourez nos univers pour savoir ce qui vous plaît.</p></li>
+        <li class="step" data-reveal><span class="step__num">II</span><h3>Écrivez-nous</h3><p>Une question sur une taille, une couleur ou une disponibilité ? Envoyez-nous un message sur WhatsApp ou appelez-nous.</p></li>
+        <li class="step" data-reveal><span class="step__num">III</span><h3>Venez essayer</h3><p>Touchez les tissus, essayez les tenues et sentez les parfums en boutique avant de choisir.</p></li>
+      </ol>
     </div>
   </section>
 
-  <section class="section section--alt" data-section="selection">
-    <div class="container">
-      <div class="section__head" data-reveal>
-        <p class="eyebrow">La sélection</p>
-        <h2 data-split>Couleurs, broderies et matières</h2>
-        <p>Un aperçu de l'allure Quma Fashion. Photos d'illustration, à remplacer par celles de la boutique.</p>
-      </div>
-      <div class="editorial">
-        <figure class="editorial__media editorial__media--tall" data-reveal>
-          <picture><source type="image/avif" srcset="/quma-fashion/img/gallery-01-500.avif 500w, /quma-fashion/img/gallery-01-900.avif 900w, /quma-fashion/img/gallery-01-1300.avif 1300w" sizes="(max-width: 720px) 100vw, 55vw"><source type="image/webp" srcset="/quma-fashion/img/gallery-01-500.webp 500w, /quma-fashion/img/gallery-01-900.webp 900w, /quma-fashion/img/gallery-01-1300.webp 1300w" sizes="(max-width: 720px) 100vw, 55vw"><img src="/quma-fashion/img/gallery-01-1300.jpg" sizes="(max-width: 720px) 100vw, 55vw" width="1300" height="1950" alt="Femme en robe noire élégante devant une cathédrale" loading="lazy"></picture>
-        </figure>
-        <figure class="editorial__media editorial__media--tall" data-reveal>
-          <picture><source type="image/avif" srcset="/quma-fashion/img/gallery-12-500.avif 500w, /quma-fashion/img/gallery-12-900.avif 900w, /quma-fashion/img/gallery-12-1300.avif 1300w" sizes="(max-width: 720px) 100vw, 55vw"><source type="image/webp" srcset="/quma-fashion/img/gallery-12-500.webp 500w, /quma-fashion/img/gallery-12-900.webp 900w, /quma-fashion/img/gallery-12-1300.webp 1300w" sizes="(max-width: 720px) 100vw, 55vw"><img src="/quma-fashion/img/gallery-12-1300.jpg" sizes="(max-width: 720px) 100vw, 55vw" width="1300" height="1950" alt="Caftan brodé porté lors d'une séance photo en extérieur" loading="lazy"></picture>
-        </figure>
-        <figure class="editorial__media" data-reveal>
-          <picture><source type="image/avif" srcset="/quma-fashion/img/gallery-02-500.avif 500w, /quma-fashion/img/gallery-02-900.avif 900w, /quma-fashion/img/gallery-02-1300.avif 1300w" sizes="(max-width: 720px) 100vw, 38vw"><source type="image/webp" srcset="/quma-fashion/img/gallery-02-500.webp 500w, /quma-fashion/img/gallery-02-900.webp 900w, /quma-fashion/img/gallery-02-1300.webp 1300w" sizes="(max-width: 720px) 100vw, 38vw"><img src="/quma-fashion/img/gallery-02-1300.jpg" sizes="(max-width: 720px) 100vw, 38vw" width="1300" height="1950" alt="Portrait d'une femme en tenue traditionnelle colorée sur fond chaud" loading="lazy"></picture>
-        </figure>
-        <figure class="editorial__media" data-reveal>
-          <picture><source type="image/avif" srcset="/quma-fashion/img/gallery-03-500.avif 500w, /quma-fashion/img/gallery-03-900.avif 900w, /quma-fashion/img/gallery-03-1300.avif 1300w" sizes="(max-width: 720px) 100vw, 38vw"><source type="image/webp" srcset="/quma-fashion/img/gallery-03-500.webp 500w, /quma-fashion/img/gallery-03-900.webp 900w, /quma-fashion/img/gallery-03-1300.webp 1300w" sizes="(max-width: 720px) 100vw, 38vw"><img src="/quma-fashion/img/gallery-03-1300.jpg" sizes="(max-width: 720px) 100vw, 38vw" width="1300" height="1950" alt="Jeune femme présentant des motifs de textiles africains colorés" loading="lazy"></picture>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" data-section="boutique">
-    <div class="container split split--reverse">
-      <div class="split__content" data-reveal>
-        <p class="eyebrow">La boutique</p>
-        <h2>Une maison, un lieu, une atmosphère</h2>
-        <p>En boutique, vous pouvez voir les tissus de près, essayer les tenues et sentir les parfums avant de choisir. Appelez-nous au 77 688 41 56 pour connaître l'adresse et les horaires.</p>
-        <p class="split__cta"><a class="btn btn--ghost" href="/quma-fashion/boutique/">En savoir plus</a></p>
-      </div>
-      <div class="split__media">
-        <picture><source type="image/avif" srcset="/quma-fashion/img/boutique-1-900.avif 900w, /quma-fashion/img/boutique-1-1400.avif 1400w, /quma-fashion/img/boutique-1-1800.avif 1800w" sizes="(max-width: 980px) 100vw, 50vw"><source type="image/webp" srcset="/quma-fashion/img/boutique-1-900.webp 900w, /quma-fashion/img/boutique-1-1400.webp 1400w, /quma-fashion/img/boutique-1-1800.webp 1800w" sizes="(max-width: 980px) 100vw, 50vw"><img src="/quma-fashion/img/boutique-1-1800.jpg" sizes="(max-width: 980px) 100vw, 50vw" width="1800" height="1125" alt="Intérieur d'une boutique de mode élégante avec vêtements et chaussures" loading="lazy"></picture>
-      </div>
-    </div>
-  </section>
-
-  <section class="cta" data-reveal>
-    <div class="container cta__inner">
-      <div class="cta__rule" data-rule aria-hidden="true"></div>
-      <h2 class="cta__title" data-split>L'élégance vous attend</h2>
-      <p class="cta__lead">Rendez-vous dans la boutique ou contactez-nous. Nous échangerons sur les univers qui vous parlent.</p>
-      <div class="cta__actions">
-        <a class="btn btn--gold" href="tel:+221776884156" data-magnetic>Nous appeler</a>
-        <a class="btn btn--ghost-light" href="/quma-fashion/contact/#demande" data-magnetic>Écrire sur WhatsApp</a>
+  <!-- 8. Appel final sous une arche -->
+  <section class="finale" aria-labelledby="finale-title">
+    <div class="container finale__inner">
+      <div class="finale__arch" data-finale>
+        <p class="eyebrow eyebrow--light">Quma Fashion</p>
+        <h2 id="finale-title" class="finale__title" data-split>L'élégance vous attend</h2>
+        <a class="finale__phone" href="tel:+221776884156">77 688 41 56</a>
+        <div class="finale__actions">
+          <a class="btn btn--gold" href="tel:+221776884156" data-magnetic>Nous appeler</a>
+          <a class="btn btn--ghost-light" href="/quma-fashion/contact/#demande" data-magnetic>Écrire sur WhatsApp</a>
+        </div>
+        <p class="finale__note">Adresse et horaires : à confirmer avec la boutique.</p>
       </div>
     </div>
   </section>

@@ -48,56 +48,54 @@
 
   /* ---------- Hero ---------- */
   function initHero(delay) {
-    var hero = document.querySelector(".hero[data-hero]");
+    var hero = document.querySelector(".rh[data-hero]");
     var pageHero = document.querySelector(".page-hero[data-hero]");
-    var root = hero || pageHero;
-    if (!root) return;
+    if (!hero && !pageHero) return;
 
     var tl = gsap.timeline({ delay: delay, defaults: { ease: "power3.out" } });
-    tl.fromTo(root, { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "power2.out" }, 0);
 
-    if (pageHero && !hero) {
-      tl.fromTo(
-        pageHero.querySelectorAll("[data-hero]"),
-        { opacity: 0, y: 34 },
-        { opacity: 1, y: 0, duration: 0.9, stagger: 0.1 },
-        0.05
-      );
+    if (!hero) {
+      tl.fromTo(pageHero, { opacity: 0 }, { opacity: 1, duration: 0.6 }, 0)
+        .fromTo(pageHero.querySelectorAll("[data-hero]"), { opacity: 0, y: 34 }, { opacity: 1, y: 0, duration: 0.9, stagger: 0.1 }, 0.05);
       return;
     }
 
-    tl.fromTo(".hero__title .line > span", { yPercent: 115 }, { yPercent: 0, duration: 1.2, ease: "power4.out", stagger: 0.12 }, 0.1)
-      .fromTo(".hero__eyebrow", { opacity: 0, y: 14, letterSpacing: "0.5em" }, { opacity: 1, y: 0, letterSpacing: "0.24em", duration: 1 }, 0)
-      .fromTo(".hero__lead", { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.8 }, 0.55)
-      .fromTo(".hero__actions", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.7 }, 0.7)
-      .fromTo(".hero__phone", { opacity: 0 }, { opacity: 1, duration: 0.6 }, 0.85)
-      .fromTo(".hero__media", { opacity: 0, clipPath: "inset(100% 0 0 0)" }, { opacity: 1, clipPath: "inset(0% 0 0 0)", duration: 1.4, ease: "expo.inOut" }, 0.15)
-      .fromTo(".hero__media img", { scale: 1.25 }, { scale: 1, duration: 2.2, ease: "power2.out" }, 0.15);
+    var arches = gsap.utils.toArray(hero.querySelectorAll(".arch"));
+    var order = [arches[1], arches[0], arches[2]].filter(Boolean); // l'arche centrale d'abord
+    tl.set(hero, { opacity: 1 })
+      .fromTo(".rh__eyebrow", { opacity: 0, y: 14, letterSpacing: "0.6em" }, { opacity: 1, y: 0, letterSpacing: "0.3em", duration: 1.1 }, 0)
+      .fromTo(".rh__title .line > span", { yPercent: 115, rotate: 3 }, { yPercent: 0, rotate: 0, duration: 1.3, ease: "power4.out", stagger: 0.12 }, 0.1)
+      .fromTo(order, { yPercent: 105 }, { yPercent: 0, duration: 1.5, ease: "expo.out", stagger: 0.14 }, 0.2)
+      .fromTo(hero.querySelectorAll(".arch__img"), { scale: 1.35 }, { scale: finePointer ? 1.08 : 1, duration: 2.2, ease: "power2.out", stagger: 0.14 }, 0.2)
+      .fromTo(".rh__lead", { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.9 }, 0.7)
+      .fromTo(".rh__actions", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.8 }, 0.85)
+      .fromTo(".rh__foot", { opacity: 0 }, { opacity: 1, duration: 0.8 }, 1.1);
 
-    var path = document.querySelector(".hero__swash path");
-    if (path && path.getTotalLength) {
-      var len = path.getTotalLength();
-      gsap.set(path, { strokeDasharray: len, strokeDashoffset: len });
-      tl.to(path, { strokeDashoffset: 0, duration: 1.1, ease: "power2.inOut" }, 0.9);
-    }
+    // Halo doré qui respire
+    gsap.to(".rh__glow", { scale: 1.15, opacity: 0.7, duration: 5, ease: "sine.inOut", yoyo: true, repeat: -1 });
 
-    var badge = document.querySelector(".hero__badge");
-    if (badge) {
-      tl.fromTo(badge, { opacity: 0, y: 30, scale: 0.9 }, { opacity: 1, y: 0, scale: 1, duration: 0.9, ease: "back.out(1.6)" }, 1.1);
-      tl.add(function () {
-        gsap.to(badge, { y: -10, duration: 2.6, ease: "sine.inOut", yoyo: true, repeat: -1 });
+    // Au défilement, les arches remontent à des vitesses différentes
+    arches.forEach(function (a) {
+      var depth = parseFloat(a.getAttribute("data-depth")) || 1;
+      gsap.to(a, {
+        y: -90 * depth, ease: "none",
+        scrollTrigger: { trigger: hero, start: "top top", end: "bottom top", scrub: true },
+      });
+    });
+
+    // À la souris, les photos bougent légèrement dans leurs arches
+    if (finePointer) {
+      var movers = arches.map(function (a) {
+        var img = a.querySelector(".arch__img");
+        var d = parseFloat(a.getAttribute("data-depth")) || 1;
+        return { x: gsap.quickTo(img, "x", { duration: 1, ease: "power3.out" }), y: gsap.quickTo(img, "y", { duration: 1, ease: "power3.out" }), d: d };
+      });
+      hero.addEventListener("mousemove", function (e) {
+        var nx = e.clientX / window.innerWidth - 0.5;
+        var ny = e.clientY / window.innerHeight - 0.5;
+        movers.forEach(function (m) { m.x(-nx * 26 * m.d); m.y(-ny * 18 * m.d); });
       });
     }
-    gsap.utils.toArray(".hero__orb").forEach(function (orb, i) {
-      gsap.to(orb, { x: i ? 30 : -40, y: i ? -30 : 40, duration: 7 + i * 2, ease: "sine.inOut", yoyo: true, repeat: -1 });
-    });
-
-    // La photo du hero glisse doucement au défilement
-    gsap.to(".hero__media img", {
-      yPercent: 8,
-      ease: "none",
-      scrollTrigger: { trigger: ".hero", start: "top top", end: "bottom top", scrub: true },
-    });
   }
 
   /* ---------- Titres découpés mot par mot ---------- */
@@ -189,23 +187,134 @@
 
   /* ---------- Bandeau défilant réactif au défilement ---------- */
   function initMarquee() {
-    var track = document.querySelector(".marquee__track");
-    if (!track) return;
-    track.style.animation = "none";
-    var loop = gsap.to(track, { xPercent: -50, duration: 40, ease: "none", repeat: -1 });
-    var boost = gsap.quickTo(loop, "timeScale", { duration: 0.6, ease: "power2.out" });
+    var loops = [];
+    gsap.utils.toArray(".marquee__track, .bigmarquee__track").forEach(function (track) {
+      track.style.animation = "none";
+      var big = track.classList.contains("bigmarquee__track");
+      var loop = gsap.to(track, { xPercent: -50, duration: big ? 50 : 40, ease: "none", repeat: -1 });
+      loops.push(loop);
+      var box = track.parentElement;
+      box.addEventListener("mouseenter", function () { gsap.to(loop, { timeScale: 0.2, duration: 0.6, overwrite: true }); });
+      box.addEventListener("mouseleave", function () { gsap.to(loop, { timeScale: 1, duration: 0.6, overwrite: true }); });
+    });
+    if (!loops.length) return;
+    // Le défilement accélère le bandeau et inverse son sens quand on remonte
+    var speed = { v: 1 };
     var settle;
+    function apply() { loops.forEach(function (l) { l.timeScale(speed.v); }); }
     ScrollTrigger.create({
       onUpdate: function (self) {
-        var v = self.getVelocity() / 250;
-        boost(gsap.utils.clamp(-6, 6, (self.direction || 1) * (1 + Math.abs(v))));
+        var dir = self.direction < 0 ? -1 : 1;
+        var v = gsap.utils.clamp(1, 6, 1 + Math.abs(self.getVelocity()) / 300);
+        gsap.to(speed, { v: dir * v, duration: 0.4, ease: "power2.out", overwrite: true, onUpdate: apply });
         clearTimeout(settle);
-        settle = setTimeout(function () { boost(self.direction < 0 ? -1 : 1); }, 180);
+        settle = setTimeout(function () {
+          gsap.to(speed, { v: dir, duration: 0.8, ease: "power2.out", overwrite: true, onUpdate: apply });
+        }, 160);
       },
     });
-    var m = document.querySelector(".marquee");
-    m.addEventListener("mouseenter", function () { gsap.to(loop, { timeScale: 0.15, duration: 0.6 }); });
-    m.addEventListener("mouseleave", function () { gsap.to(loop, { timeScale: 1, duration: 0.6 }); });
+  }
+
+  /* ---------- Manifeste : les mots se colorent au défilement ---------- */
+  function initScrubText() {
+    gsap.utils.toArray("[data-scrub-text]").forEach(function (el) {
+      var text = el.textContent.trim();
+      el.setAttribute("aria-label", text);
+      el.innerHTML = text.split(/\s+/).map(function (w) {
+        return '<span class="w" aria-hidden="true">' + w + "</span>";
+      }).join(" ");
+      gsap.fromTo(el.querySelectorAll(".w"), { opacity: 0.14 }, {
+        opacity: 1,
+        stagger: 0.08,
+        ease: "none",
+        scrollTrigger: { trigger: el, start: "top 80%", end: "bottom 45%", scrub: 0.6 },
+      });
+    });
+  }
+
+  /* ---------- Index des univers : lignes + aperçu qui suit la souris ---------- */
+  function initIndex() {
+    var list = document.querySelector("[data-index]");
+    if (!list) return;
+    var rows = gsap.utils.toArray(list.querySelectorAll(".index__row"));
+    gsap.from(rows, {
+      y: 50, opacity: 0, duration: 0.9, ease: "power3.out", stagger: 0.06,
+      scrollTrigger: { trigger: list, start: "top 85%", once: true },
+    });
+    var preview = document.querySelector(".index__preview");
+    var img = preview && preview.querySelector("img");
+    if (!finePointer || !preview || !img) return;
+    var xTo = gsap.quickTo(preview, "x", { duration: 0.55, ease: "power3.out" });
+    var yTo = gsap.quickTo(preview, "y", { duration: 0.55, ease: "power3.out" });
+    var rTo = gsap.quickTo(preview, "rotation", { duration: 0.8, ease: "power3.out" });
+    var lastX = 0;
+    gsap.set(preview, { xPercent: -50, yPercent: -55, scale: 0.6 });
+    list.addEventListener("mousemove", function (e) {
+      xTo(e.clientX); yTo(e.clientY);
+      rTo(gsap.utils.clamp(-10, 10, (e.clientX - lastX) * 0.6));
+      lastX = e.clientX;
+    });
+    rows.forEach(function (row) {
+      row.addEventListener("mouseenter", function () {
+        var src = row.querySelector("img");
+        if (src) img.src = src.currentSrc || src.src;
+        gsap.to(preview, { autoAlpha: 1, scale: 1, duration: 0.45, ease: "power3.out", overwrite: "auto" });
+        gsap.fromTo(img, { scale: 1.25 }, { scale: 1, duration: 0.7, ease: "power3.out" });
+      });
+    });
+    list.addEventListener("mouseleave", function () {
+      gsap.to(preview, { autoAlpha: 0, scale: 0.6, duration: 0.35, ease: "power2.in", overwrite: "auto" });
+    });
+  }
+
+  /* ---------- Lookbook : défilement horizontal épinglé (ordinateur) ---------- */
+  function initLookbook(mm) {
+    var section = document.querySelector("[data-look]");
+    var track = document.querySelector("[data-look-track]");
+    if (!section || !track) return;
+    mm.add("(min-width: 981px)", function () {
+      document.documentElement.classList.add("has-hscroll");
+      var distance = function () { return Math.max(0, track.scrollWidth - window.innerWidth); };
+      var tween = gsap.to(track, {
+        x: function () { return -distance(); },
+        ease: "none",
+        scrollTrigger: {
+          trigger: section,
+          start: "top top",
+          end: function () { return "+=" + distance(); },
+          pin: true,
+          scrub: 0.8,
+          invalidateOnRefresh: true,
+        },
+      });
+      // Chaque photo se décale légèrement dans son cadre pendant le défilement
+      gsap.utils.toArray(track.querySelectorAll(".look__card img")).forEach(function (im) {
+        gsap.fromTo(im, { xPercent: -6, scale: 1.14 }, {
+          xPercent: 6, scale: 1.14, ease: "none",
+          scrollTrigger: { trigger: im.closest(".look__card"), containerAnimation: tween, start: "left right", end: "right left", scrub: true },
+        });
+      });
+      return function () { document.documentElement.classList.remove("has-hscroll"); };
+    });
+    gsap.from(track.querySelectorAll(".look__card, .look__end"), {
+      y: 80, opacity: 0, duration: 1, ease: "power3.out", stagger: 0.08,
+      scrollTrigger: { trigger: section, start: "top 75%", once: true },
+    });
+  }
+
+  /* ---------- Arche finale ---------- */
+  function initFinale() {
+    var arch = document.querySelector("[data-finale]");
+    if (!arch) return;
+    gsap.fromTo(arch, { clipPath: "inset(100% 0 0 0 round 999px 999px 0 0)" }, {
+      clipPath: "inset(0% 0 0 0 round 999px 999px 0 0)",
+      ease: "none",
+      scrollTrigger: { trigger: arch, start: "top 95%", end: "top 35%", scrub: 0.6 },
+    });
+    gsap.from(arch.querySelectorAll(".finale__phone, .finale__actions, .finale__note"), {
+      y: 30, opacity: 0, duration: 0.9, stagger: 0.12, ease: "power3.out",
+      scrollTrigger: { trigger: arch, start: "top 45%", once: true },
+    });
   }
 
   /* ---------- Section affiche ---------- */
@@ -304,6 +413,10 @@
     initReveals();
     initCounters();
     initMarquee();
+    initScrubText();
+    initIndex();
+    initLookbook(mm);
+    initFinale();
     initPoster();
     initParallax(mm);
     initPointer();
